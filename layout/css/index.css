@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:300,400,500,700');
+/* Start Main Rulez */
+
+body {
+	background-color: #F4F4F4;
+	font-size: 20px;
+}
+
+/* End Main Rulez */
+
+/* Start Index Page */
+
+/* Start Upper bar */
+
+
+.upper-bar .info{
+    margin: 10px 0;
+}
+
+.home-nombre{
+	
+	border: 1px solid #000;
+}
+.home-nombres .nombres {
+	display: inline-block;
+    padding: 10px 5px;
+    margin-left: 40px;
+	border-radius: 5px;
+	margin-top:5px;
+}
+.home-nombres .nombres span {
+    display: block;
+	font-size: 15px;
+	margin-top:5px;
+}
+.home-nombres .nombres i{
+	background-color: #EEE;
+	border: 1px solid #ccc;
+	padding: 15px 50px;
+	border-radius: 5px;
+}
+
+/* End Upper bar */
+
+/* Start Body */
+
+.home-stats .stat {
+	background-color: #EEE;
+	BORDER: 1px solid #ccc;
+	padding:20px;
+	font-size: 30px;
+	border-radius: 10px;
+}
+
+.home-stats .stat span {
+    display: block;
+	font-size: 50px;
+}
+
+.latest {
+	margin-top: 30px;
+	font-size: 30px;
+}
+
+/* End Body
+
+/* Start Footer */
+
+.footer{
+    padding: 10px;
+}
+.footer ul{
+    margin: 0;
+}
+.footer ul li{
+    display: inline-block;
+}
+
+.footer ul li a{
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+/* End Footer */
+
+/* End Index Page */
+
+
