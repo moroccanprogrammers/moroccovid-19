@@ -97,5 +97,12 @@ body {
 /* End Footer */
 
 /* End Index Page */
+/* Start MAP*/
 
+#map {
+	height: 600px;
+	width: 100%;
+}
+
+/* End MAP*/
 
