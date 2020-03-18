@@ -44,9 +44,22 @@ body {
 
 /* Start Body */
 
-      /* Start oloring */
-.home-stats .stat #tC{
+	  /* Start oloring */
+.home-stats .stat #deaths{
+		background-color: rgba(7, 0, 0, 0.856);
+		color: white;
+}
+.home-stats .stat #recovered{
+		background-color: rgba(26, 184, 20, 0.788);
+		color: white;
+}
+.home-stats .stat #positive{
+		background-color: #FF0000;
+		color: white;
+}
+.home-stats .stat #negative{
 	background-color: #70A800;
+	color: white;
 }     /* End Coloring */
 
 
