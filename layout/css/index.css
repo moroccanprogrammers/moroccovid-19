@@ -44,6 +44,12 @@ body {
 
 /* Start Body */
 
+      /* Start oloring */
+.home-stats .stat #tC{
+	background-color: #70A800;
+}     /* End Coloring */
+
+
 .home-stats .stat {
 	background-color: #EEE;
 	BORDER: 1px solid #ccc;
