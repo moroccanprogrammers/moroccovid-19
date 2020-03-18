@@ -50,28 +50,22 @@
 	<div class="container home-stats text-center">
 		<h1>مستجدات فيروس كورونا بالمغرب</h1>
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="stat">
 					الوفيات
-					<span>3</span>
+					<span id="tD">0</span>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="stat">
 					المتعافون
-					<span>1</span>
+					<span id="tR">0</span>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="stat">
 					الحالات المؤكدة
-					<span>38</span>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="stat">
-					الحالات المستبعدة
-					<span>137</span>
+					<span id="tC">0</span>
 				</div>
 			</div>
 		</div>
@@ -142,5 +136,32 @@
 		</div>
 	</div>
 	<!-- End Footer -->
+	
+	<script>
+
+		const api_url = 'https://api.covid19api.com/summary';
+		
+		async function getData(){
+		
+			const response = await fetch(api_url);
+			const data = await response.json();
+			
+			//m = morocco
+			var mData = data.Countries[100];
+			
+			//t = total
+			var tConfirmed = mData.TotalConfirmed;
+			var tDeaths = mData.TotalDeaths;
+			var tRecovered = mData.TotalRecovered;
+						
+			document.getElementById("tC").textContent = tConfirmed ;
+			document.getElementById("tD").textContent = tDeaths;
+			document.getElementById("tR").textContent  = tRecovered;
+		}
+		
+		getData();
+	
+	</script>
+	
 </body>
 </html>
