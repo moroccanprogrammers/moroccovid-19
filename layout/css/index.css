@@ -62,6 +62,18 @@ body {
 	font-size: 30px;
 }
 
+.link {
+	background: #0099cb;
+}
+
+.row {
+	margin: 1px;
+}
+
+.col-md-6 {
+	max-width: 49%;
+	margin-right: 1px;
+}
 /* End Body
 
 /* Start Footer */
