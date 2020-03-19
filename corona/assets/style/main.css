@@ -1,0 +1,236 @@
+
+html {
+  overflow-y: scroll;
+}
+
+
+body {
+       font-family: "arabicRegular",  arabicRegular, Arial, "Lucida Grande", sans-serif;
+       font-weight: 300;
+       font-size: 11px;
+       margin: 0;
+       -webkit-font-smoothing: antialiased !important;
+       -moz-osx-font-smoothing: grayscale !important;
+       font-weight: 500;
+       margin: auto;
+       position: relative;
+       color: #556;
+}
+
+@font-face {
+  font-family: HelveticaB;
+  src: url(font/HelveticaNeueBd.ttf);
+}
+@font-face {
+  font-family: arabicRegular;
+  src: url(font/kaffregular.ttf);
+}
+@font-face {
+  font-family: arabicBold;
+  src: url(font/kaffsbold.ttf);
+}
+
+
+
+
+
+
+p {
+    font-weight: normal;
+    /* color: #444; */
+}
+
+img#logo{
+    height: 26px;
+}
+div#content {
+    width: 880px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+div#title {
+    font-size: 27px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#stats {
+    direction: rtl;
+    margin-top: 20px;
+    width: 590px;
+    float: right;
+}
+.red {
+    color: #FF4757;
+}
+.stat1 {
+    float: right;
+    width: 147px;
+    /* border-left: 1px solid #e8e8e8; */
+}
+
+.stat1-title {
+    font-size: 13px;
+    padding-right: 15px;
+}
+.stat1-number {
+    font-size: 50px;
+    font-family: HelveticaB;
+    padding: 0 15px 0 0;
+    margin: -11px 0 0 0;
+}
+.stat-in {
+    width: -webkit-fill-available;
+    background: #F1F1F1;
+    padding: 10px 15px 15px 10px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    border-left: 1px solid #e8e8e8;
+}
+.stat-on {
+    width: -webkit-fill-available;
+    background: #F1F1F1;
+    padding: 10px 15px 15px 10px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    /* border-radius: 0 3px 3px 0; */
+    border-left: 1px solid #e8e8e8;
+}
+.stat-out {
+     width: -webkit-fill-available;
+     background: #F1F1F1;
+     padding: 10px 15px 15px 10px;
+     height: auto;
+     float: left;
+     margin-top: 10px;
+     border-radius: 3px 0px 0px 3px;
+     /* border-left: 1px solid #e8e8e8; */
+}
+.stat-in-number {
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-family: HelveticaB;
+    float: right;
+}
+
+.stat-in-perc {
+    float: right;
+    margin-top: 10px;
+    padding-right: 5px;
+    font-weight: 700;
+    color: #999;
+}
+
+.stat-in-title {
+    width: -webkit-fill-available;
+    float: right;
+}
+.news {
+    float: right;
+    width: 280px;
+    margin-right: 10px;
+}
+
+h2 span {
+    font-size: 12px;
+    color: #888;
+}
+
+.topic {
+    border: 1px solid #EEE;
+    margin-bottom: 5px;
+    padding: 17px;
+    border-radius: 3px;
+}
+
+h4 {
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+}
+div#sub-title {
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.topic p {
+    margin: 7px 0 0 0;
+    font-size: 10px;
+    color: #888;
+}
+div#header {
+    /* width: 880px; */
+    margin: auto;
+    height: 300px;
+    /* margin-top: 20px; */
+    background: rgba(0, 0, 0, 0.05);
+}
+
+div#footer {
+    width: 880px;
+    margin: auto;
+    margin-top: 20px;
+}
+div#table-stats {
+    direction: rtl;
+    margin-top: 20px;
+    width: 590px;
+    float: right;
+}
+div#main {
+    float: right;
+    width: 590px;
+}
+h3 {
+    float: right;
+}
+.stat-city {
+    width: -webkit-fill-available;
+    background: #ffffff;
+    padding: 10px 15px 10px 10px;
+    height: -webkit-fill-available;
+    float: left;
+    margin-top: 5px;
+    border: 1px solid #efeeee;
+    border-radius: 3px;
+}
+div#city-d {
+    width: fit-content;
+    /* background: #444; */
+    height: fit-content;
+    float: right;
+    margin-left: 21px;
+    padding-top: 6px;
+    /* border-left: 1px solid #eee; */
+}
+div#city-s {
+    width: fit-content;
+    /* background: #444; */
+    height: fit-content;
+    float: right;
+    margin-left: 21px;
+    border-left: 1px solid #eee;
+}
+.stat-in-date {
+    font-weight: 900;
+}
+.stat-city p {
+    font-size: 12px;
+    padding: 0px 0 9px;
+    margin: 2px 0 10px 0;
+    font-weight: 800;
+    border-bottom: 1px solid #EEE;
+}
+.stat-in-titl {
+    width: -webkit-fill-available;
+    float: right;
+}
