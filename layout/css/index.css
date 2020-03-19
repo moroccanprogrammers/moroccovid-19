@@ -3,7 +3,8 @@
 
 body {
 	background-color:white;
-	font-size: 20px;
+	font-size: 30px;
+	color: #fff;
 }
 
 /* End Main Rulez */
@@ -11,10 +12,17 @@ body {
 /* Start Index Page */
 
 /* Start Upper bar */
-
+.text-co{
+	margin-bottom: 20px;
+}
+.wtm:hover,.text-co:hover{
+	color: rgb(153, 0, 0);
+	cursor: default;
+}
 
 .upper-bar .info{
-    margin: 10px 0;
+	margin: 10px 0;
+	
 }
 
 .home-nombre{
@@ -45,7 +53,7 @@ body {
 /* Start Body */
 
 .home-stats .stat {
-	background-color: #EEE;
+	background-color: #2FA4E7;
 	BORDER: 1px solid #ccc;
 	padding:20px;
 	font-size: 30px;
@@ -73,6 +81,38 @@ body {
 	max-width: 49%;
 	margin-right: 1px;
 }
+
+/* Start Map */
+
+.map {
+	
+	margin-top: 30px;
+	
+}
+.mapdiv {
+	
+	width: 55%;
+	margin: auto;
+	padding: 50px;
+}
+
+.mapdiv path {
+	
+	fill: #2FA4E7;
+	stroke: #dece0c;
+	stroke-width: 4px;
+	transition: fill 0.3s;
+	
+}
+
+.mapdiv :hover {
+	
+	fill: #000;
+	
+}
+
+/* End Map */
+
 /* End Body
 
 /* Start Footer */
@@ -99,9 +139,11 @@ body {
 
 .logo{
 	height: 46px;
+	
 }
 .navbar-nav{
-	margin-right: 0 !important;
+	margin-left: 250px;
+	
 }
 
 .wtm {
@@ -119,4 +161,9 @@ body {
     right: 0;
     margin: auto;
     height: 2px;
+}
+.nav-link{
+	font-size: 16px;
+	margin-right: 25px;
+
 }
