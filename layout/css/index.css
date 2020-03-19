@@ -11,10 +11,17 @@ body {
 /* Start Index Page */
 
 /* Start Upper bar */
-
+.text-co{
+	margin-bottom: 20px;
+}
+.wtm:hover,.text-co:hover{
+	color: rgb(153, 0, 0);
+	cursor: default;
+}
 
 .upper-bar .info{
-    margin: 10px 0;
+	margin: 10px 0;
+	
 }
 
 .home-nombre{
@@ -99,9 +106,11 @@ body {
 
 .logo{
 	height: 46px;
+	
 }
 .navbar-nav{
-	margin-right: 0 !important;
+	margin-left: 250px;
+	
 }
 
 .wtm {
@@ -119,4 +128,9 @@ body {
     right: 0;
     margin: auto;
     height: 2px;
+}
+.nav-link{
+	font-size: 16px;
+	margin-right: 25px;
+
 }
