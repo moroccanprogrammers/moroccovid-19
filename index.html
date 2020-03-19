@@ -9,6 +9,8 @@
 	<link href="layout/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="layout/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="layout/css/index.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 </head>
 
 <body lang="ar" dir="rtl">
@@ -194,7 +196,8 @@
 						<i class="fas fa-newspaper"></i>
 					</div>
 					<div class="panel-body">
-						Test
+						<!--MAP ADDED BY ACHRAF TANI-->
+						<div id="map"></div>
 					</div>
 				</div>
 			</div>
@@ -221,7 +224,73 @@
 		</div>
 	</div>
 	<!-- End Footer -->
+	<!--START SCRIPT MAP-->
 
+	<script>
+        var map = L.map('map').setView([0, 0], 1);
+        L.tileLayer('https://api.maptiler.com/maps/darkmatter/{z}/{x}/{y}.png?key=zRNnT3DlIOatitTS9dbW', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+		}).addTo(map);
+		
+		var circle = L.circle([33.971588,-6.849813], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
+		}).addTo(map);
+		var circle = L.circle([31.629473,-7.981084], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
+		}).addTo(map);
+		
+		var circle = L.circle([33.596684,-7.618056], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
+		}).addTo(map);
+		var circle = L.circle([34.059769,-4.965310], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
+		}).addTo(map);
+		var circle = L.circle([33.929932,-6.914300], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
+		}).addTo(map);
+		var circle = L.circle([28.989269,-10.064390], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
+		}).addTo(map);
+		var circle = L.circle([35.567211,-5.371620], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
+		}).addTo(map);
+		var circle = L.circle([32.879101,-6.911180], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
+		}).addTo(map);
+		var circle = L.circle([32.498821,-6.686700], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 500
+		}).addTo(map);
+    </script>
+
+
+	<!--END SCRIPT MAP-->
 	<script>
 
 		const api_url = 'https://api.covid19api.com/summary';
