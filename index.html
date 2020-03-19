@@ -11,47 +11,91 @@
 	<link href="layout/css/index.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body lang="ar" dir="rtl">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-fixed">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+				aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
+			<div class="collapse navbar-collapse" id="navbarColor01">
+				<img src="./layout/images/icon.png" class="logo">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"> أرقام لضرورة <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">مستجدات فيروس</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">نصائح للوقاية</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">مواقع تواجد الفيروس</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<!-- Start Upper-Bar -->
-
-	<div class="upper-bar">
-		<div class="home-nombres container text-center">
-			<div class="row">
-				<div class="nombres col-md-1 text-center">
+	<div class="panel-heading text-center mt-5">
+		<h1 class="wtm">أرقام لضرورة</h1>
+	</div>
+	<div class="container home-stats text-center mt-5">
+		<div class="row mt-5">
+			<div class="col-md-4">
+				<div class="stat">
 					<i class="fa fa-university"></i> <span>INSTITUT PASTEUR</span><b>0522262062</b>
 				</div>
-				<div class="nombres col-md-1 text-center">
+			</div>
+			<div class="col-md-4">
+				<div class="stat">
 					<i class="fa fa-phone"></i> <span>SOS MÉDECINS</span><b>0522989898</b>
 				</div>
-				<div class="nombres col-md-1 text-center">
+			</div>
+			<div class="col-md-4">
+				<div class="stat">
 					<i class="fa fa-phone"></i> <span>CENTRE ANTIPOISON</span><b>0801000180</b>
 				</div>
-				<div class="nombres col-md-1 text-center">
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-md-4">
+				<div class="stat">
 					<i class="fa fa-phone"></i> <span>RENSEIGNMENT</span><b>160</b>
 				</div>
-				<div class="nombres col-md-1 text-center">
+			</div>
+			<div class="col-md-4">
+				<div class="stat">
 					<i class="fa fa-ambulance"></i> <span>AMBULANCE</span><b>150</b>
 				</div>
-				<div class="nombres col-md-1 text-center">
+			</div>
+			<div class="col-md-4">
+				<div class="stat">
 					<i class="fa fa-phone"></i> <span>GENDARMERIE</span><b> 177</b>
 				</div>
-				<div class="nombres col-md-1 text-center">
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-md-4">
+				<div class="stat">
 					<i class="fa fa-phone"></i> <span>POLICE</span><b>190</b>
 				</div>
-				<div class="nombres col-md-1 text-center">
+			</div>
+			<div class="col-md-4">
+				<div class="stat">
 					<i class="fa fa-phone"></i> <span>POMPERS</span><b>150</b>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- End Upper-Bar -->
-
 	<!-- Start Body -->
 
 	<div class="container home-stats text-center mt-5">
-		<h1>مستجدات فيروس كورونا بالمغرب</h1>
+		<h1 class="wtm">مستجدات فيروس كورونا بالمغرب</h1>
 		<div class="row mt-5">
 			<div class="col-md-4">
 				<div class="stat btn-danger border-primary">
@@ -78,7 +122,7 @@
 			<div class="col-sm-12">
 				<div class="panel panel-default">
 					<div class="panel-heading text-center">
-						اخر اخبار فيروس كورونا بالمغرب
+						<h1 class="wtm">اخر اخبار فيروس كورونا بالمغرب</h1>
 						<i class="fa fa-news"></i>
 					</div>
 					<div class="panel-body">
@@ -93,7 +137,9 @@
 			<div class="col-sm-12">
 				<div class="panel panel-default">
 					<div class="panel-heading text-center">
-						<h1>نصائح للوقاية من فيروس كورونا</h1>
+						<h1 class="wtm">نصائح للوقاية من فيروس كورونا</h1>
+					</div>
+					<div class="panel-body">
 						<div class="row justify-content-center mt-5">
 							<div>
 								<div class="row">
@@ -135,9 +181,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel-body">
-						Test
-					</div>
 				</div>
 			</div>
 		</div>
@@ -147,7 +190,7 @@
 			<div class="col-sm-12">
 				<div class="panel panel-default">
 					<div class="panel-heading text-center">
-						مواقع تواجد الفيروس في المغرب
+						<h1 class="wtm">مواقع تواجد الفيروس في المغرب</h1>
 						<i class="fas fa-newspaper"></i>
 					</div>
 					<div class="panel-body">

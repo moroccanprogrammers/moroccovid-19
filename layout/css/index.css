@@ -2,7 +2,7 @@
 /* Start Main Rulez */
 
 body {
-	background-color: #F4F4F4;
+	background-color:white;
 	font-size: 20px;
 }
 
@@ -54,7 +54,6 @@ body {
 
 .home-stats .stat span {
     display: block;
-	font-size: 50px;
 }
 
 .latest {
@@ -98,4 +97,26 @@ body {
 
 /* End Index Page */
 
+.logo{
+	height: 46px;
+}
+.navbar-nav{
+	margin-right: 0 !important;
+}
 
+.wtm {
+	position: relative;
+}
+
+.wtm::after {
+    border-bottom-width: 2px;
+    content: "";
+    width: 50px;
+    background-color: black;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 2px;
+}
