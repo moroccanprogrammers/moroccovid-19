@@ -84,6 +84,10 @@ font-size: 50px;
     list-style: none;
     text-decoration: none;
 }
+
+.card-header {
+    text-align: -webkit-right;
+}
 /* End Analytic Content */
 
 /* Start Body */
