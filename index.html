@@ -343,26 +343,17 @@
 
 	<script>
 
-		const api_url = 'https://api.covid19api.com/summary';
+		const api_url = 'https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco/';
+        
 
 		async function getData() {
 
 			const response = await fetch(api_url);
 			const data = await response.json();
-
-
-			// cs = countries
-			var cs = data.Countries;
-
-			//c = country
-			const c = cs.find( item => {
-				return item.Country == "Morocco"
-			});
-
-			//t = total
-			var tConfirmed = c.TotalConfirmed;
-			var tDeaths = c.TotalDeaths;
-			var tRecovered = c.TotalRecovered;
+            
+			var tConfirmed = data.totalcases;
+			var tDeaths = data.totaldeaths;
+			var tRecovered = data.recovered;
 
 			document.getElementById("tC").textContent = tConfirmed;
 			document.getElementById("tD").textContent = tDeaths;
