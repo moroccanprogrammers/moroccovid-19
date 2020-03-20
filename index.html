@@ -50,10 +50,7 @@
 		frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 		allowfullscreen></iframe>
 	</div>
-	<div class="panel-heading text-center mt-5">
-		<h1 class="wtm">أرقام لضرورة</h1>
-	</div>
-	<div class="container home-stats text-center mt-5">
+
 =======
 	
 	<div class="container home-stats text-center mt-5" id="nombres">
@@ -355,6 +352,8 @@
 	</div>
 	<!-- End Footer -->
 
+	<!-- Start Script API COVID19API  -->
+	
 	<script>
 
 		const api_url = 'https://api.covid19api.com/summary';
@@ -363,14 +362,20 @@
 
 			const response = await fetch(api_url);
 			const data = await response.json();
+			
 
-			//m = morocco
-			var mData = data.Countries[100];
-
+			// cs = countries
+			var cs = data.Countries;
+			
+			//c = country
+			const c = cs.find( item => {
+				return item.Country == "Morocco"
+			});
+			
 			//t = total
-			var tConfirmed = mData.TotalConfirmed;
-			var tDeaths = mData.TotalDeaths;
-			var tRecovered = mData.TotalRecovered;
+			var tConfirmed = c.TotalConfirmed;
+			var tDeaths = c.TotalDeaths;
+			var tRecovered = c.TotalRecovered;
 
 			document.getElementById("tC").textContent = tConfirmed;
 			document.getElementById("tD").textContent = tDeaths;
@@ -380,6 +385,8 @@
 		getData();
 
 	</script>
+	
+	<!-- End Script API COVID19API  -->
 
 </body>
 
