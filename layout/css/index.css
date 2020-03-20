@@ -9,9 +9,29 @@ body {
 
 /* End Main Rulez */
 
+/* Start Bootstrap Edits */
+
+.panel-default {
+	border: black 1px solid !important;
+}
+
+.panel-heading {
+	
+	background-color: #2FA4E7 !important;
+	color: #fff !important;
+	border-color: #ddd;
+	
+}
+.nav-link {
+	font-size: 25px !important;
+}
+
+/* Start Bootstrap Edits */
+
 /* Start Index Page */
 
-/* Start Upper bar */
+/* Start Upper Bar */
+
 .text-co{
 	margin-bottom: 20px;
 }
@@ -52,6 +72,23 @@ body {
 
 /* Start Body */
 
+.corona iframe {
+	
+	width:  560px;
+	height: 315px;
+	
+}
+
+@media (max-width: 768px) {
+	
+	.corona iframe {
+	
+		width: 400px;
+		height: 315px;
+	
+	}
+} 
+
 .home-stats .stat {
 	background-color: #2FA4E7;
 	BORDER: 1px solid #ccc;
@@ -91,9 +128,16 @@ body {
 }
 .mapdiv {
 	
-	width: 55%;
+	width: 50%;
 	margin: auto;
 	padding: 50px;
+	float: right;
+}
+
+
+.mapdiv svg {
+	
+	width: 600px;	
 }
 
 .mapdiv path {
@@ -105,11 +149,58 @@ body {
 	
 }
 
+.maplist {
+	
+	float: left;
+	width: 50%;
+	margin-top: 100px;
+	border: 1px solid #000;
+	padding: 30px;
+	
+}
+
+.maplist a {
+	
+	text-decoration: none;
+	trasnition: color 0.3s;
+	
+}
+
+
 .mapdiv :hover {
 	
 	fill: #000;
 	
 }
+.maplist .grid-item {
+	
+	background-color: #2FA4E7;
+	margin: 20px;
+	padding: 5px;
+	width: 100%;
+	
+}
+
+.maplist .grid-item span {	
+	
+	display: block;
+	background-color: #dece0c;
+
+}
+
+@media (max-width: 768px) {
+	
+	.mapdiv {
+		
+		width: 100%;
+	}
+	.maplist {
+			
+		width: 100%;
+		margin: 0px;
+		
+	}
+} 
 
 /* End Map */
 
@@ -122,6 +213,7 @@ body {
 }
 .footer ul{
     margin: 0;
+	float: left;
 }
 .footer ul li{
     display: inline-block;
@@ -131,6 +223,7 @@ body {
     margin-left: 20px;
     display: inline-block;
     font-size: 18px;
+	color: #fff;
 }
 
 /* End Footer */
