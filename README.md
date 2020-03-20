@@ -1,18 +1,14 @@
-## Why this Repository :
 
-# moroccovid-19
+## 01 - About Project
 
-# الفكرة
+This is a redesign of the past web project, Moroccovid-19, With a large number of rounded corners and white space, users can freely control the relevant columns of the home page for easy operation, users can also get the latest news from trusted sources.
 
-مشروع تطبيق الكتروني يقدم خدمة الإحصائيات بشكل دقيق حول تداعيات فيروس كورونا بالمملكة المغربية
-=======
-## Why this Repository :
+## 02 - Dark Mode
 
-Under the situation that we have at this time in morocco we are forced to stay at home so this repository
-is made to help marocains and support them digital actually we don't have yet any idea of what to build
-so if you have any good ideas please create an issue with details and we will discuss them together everyone can participate not only developers.
+In order to make it easier to operate at night, a dark mode is created here.
 
-## How to contribute :
+
+## 03 - How to contribute :
 
 1 - Fork this repository
 
@@ -27,6 +23,6 @@ git commit -m "Made some changes"
 ```
 4 - Send your PR
 
-## License
+## 04 - License
 
-Do whatever you want with this project just don't sell to people
+Do whatever you want with this project just don't, not for commercial use
