@@ -208,6 +208,55 @@ body {
 
 /* End Body
 
+
+/* start form  */
+
+
+#form-p
+{
+	text-align: center;
+	color: #2FA4E7;
+	line-height: 50px;   /* within paragraph */
+
+}
+#form-group
+{
+	width: 500PX;
+	height: 800px;
+	padding-top: 20px;
+
+}
+
+.email
+{
+	font-size: 17px;
+	height: 50px;
+	width: 400px;
+	padding-left: 20px; 
+	margin-top: 0px;
+	
+						   
+}
+
+.submit 
+{
+	height: 50px;
+	width: 400px;
+	background-color: #2FA4E7;
+	font-size: 20px;
+	color: white;
+	margin-bottom: 60px;
+}
+
+.submit:hover
+{
+	background-color: #fff;
+	color: #2FA4E7;
+	
+}
+
+/* end form  */
+
 /* Start Footer */
 
 .footer{
