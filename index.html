@@ -40,7 +40,9 @@
 			</div>
 		</div>
 	</nav>
-
+	<header class="header">
+		<h1 class="header__h1">Stay At Home</h1>
+	</header>
 	<!-- Start Upper-Bar -->
 
 	<!-- Start Body -->
@@ -275,93 +277,93 @@
 	<!-- End Body -->
 	<!-- Start form	-->
 
-	<p class="h2"	id='form-p'>		لا تنسى التسجيل بإدخال اسمك وبريدك الإلكتروني 	<br>
-		لتبقى بذلك متتبع لكل ما هو جديد ولمتابعة آخر التحديثات	</p>
+	<p class="h2" id='form-p'> لا تنسى التسجيل بإدخال اسمك وبريدك الإلكتروني <br>
+		لتبقى بذلك متتبع لكل ما هو جديد ولمتابعة آخر التحديثات </p>
 
 
 
-	<form	action="#"	method="POST>
+	<form action="#" method="POST>
 
-		<div class="form-group">
+		<div class=" form-group">
 
-			<!-- name    and     Email   inputs -->
-			<div     style="padding-left:470px;	 padding-top: 28px;">   
-				<input	class='email'	type="email"    name="email"     placeholder="أدخل عنوان بريدك الإلكتروني هنا  "  >    
-			</div>
+		<!-- name    and     Email   inputs -->
+		<div style="padding-left:470px;	 padding-top: 28px;">
+			<input class='email' type="email" name="email" placeholder="أدخل عنوان بريدك الإلكتروني هنا  ">
+		</div>
 
 
-			<!-- 'joindre'   button -->
-			<div    style="   margin-left:470px;	 margin-top:20px;"   >
-				<input   class="submit"    type="submit"   value="تسجيل"> <br>
-			</div>
+		<!-- 'joindre'   button -->
+		<div style="   margin-left:470px;	 margin-top:20px;">
+			<input class="submit" type="submit" value="تسجيل"> <br>
+		</div>
 
 		</div>
-	<form>
-	<!-- end form	-->
+		<form>
+			<!-- end form	-->
 
-	<!-- Start Footer-->
+			<!-- Start Footer-->
 
-	<div class="footer">
-		<div class="home-contact container">
-			<div>
-				<div class="row">
-					<div class="col-sm-6 text-center text-sm-left">
-						Copyright &copy; 2020 Moroccovid-19
-					</div>
-					<div class="col-sm-6  text-center text-sm-right">
-						<ul class="list-unstyled">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						</ul>
+			<div class="footer">
+				<div class="home-contact container">
+					<div>
+						<div class="row">
+							<div class="col-sm-6 text-center text-sm-left">
+								Copyright &copy; 2020 Moroccovid-19
+							</div>
+							<div class="col-sm-6  text-center text-sm-right">
+								<ul class="list-unstyled">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<!-- End Footer -->
+			<!-- End Footer -->
 
-	<!-- Start Script API COVID19API  -->
+			<!-- Start Script API COVID19API  -->
 
-	<script>
+			<script>
 
-		const api_url = 'https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco/';
-		const items = document.getElementsByClassName('list__item');
-		const img = document.getElementById('img');
-		async function getData() {
+				const api_url = 'https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco/';
+				const items = document.getElementsByClassName('list__item');
+				const img = document.getElementById('img');
+				async function getData() {
 
-			const response = await fetch(api_url);
-			const data = await response.json();
+					const response = await fetch(api_url);
+					const data = await response.json();
 
-			var tConfirmed = data.totalcases;
-			var tDeaths = data.totaldeaths;
-			var tRecovered = data.recovered;
+					var tConfirmed = data.totalcases;
+					var tDeaths = data.totaldeaths;
+					var tRecovered = data.recovered;
 
-			document.getElementById("tC").textContent = tConfirmed;
-			document.getElementById("tD").textContent = tDeaths;
-			document.getElementById("tR").textContent = tRecovered;
-		}
-
-		getData();
-		for (let i = 0; i < items.length; i++) {
-			items[i].addEventListener('click', (e) => {
-
-				for (let j = 0; j < items.length; j++) {
-					items[j].className = items[j].className.replace(" active__item", "");
+					document.getElementById("tC").textContent = tConfirmed;
+					document.getElementById("tD").textContent = tDeaths;
+					document.getElementById("tR").textContent = tRecovered;
 				}
 
-				let dataValue = e.srcElement.getAttribute("data-value");
+				getData();
+				for (let i = 0; i < items.length; i++) {
+					items[i].addEventListener('click', (e) => {
 
-				img.src = `./layout/images/img${dataValue}.jpg`;
-				items[dataValue - 1].className += " active__item";
-			});
-		}
+						for (let j = 0; j < items.length; j++) {
+							items[j].className = items[j].className.replace(" active__item", "");
+						}
 
-	</script>
+						let dataValue = e.srcElement.getAttribute("data-value");
 
-	<!-- End Script API COVID19API  -->
+						img.src = `./layout/images/img${dataValue}.jpg`;
+						items[dataValue - 1].className += " active__item";
+					});
+				}
+
+			</script>
+
+			<!-- End Script API COVID19API  -->
 
 </body>
 
