@@ -322,7 +322,7 @@
 			<div class="panel-heading">
 				<div class="row">
 				<div class="col-sm-6 text-center text-sm-left">
-					Copyright &copy; 2020 Moroccovid-19
+					Copyright &copy; <span class="year">2020</span> Moroccovid-19
 				</div>
 				<div class="col-sm-6  text-center text-sm-right">
 					<ul class="list-unstyled">
@@ -361,7 +361,10 @@
 		}
 
 		getData();
-
+		#dynamic year in the copy right section  
+		var date = new Date();
+		var year = document.getElementsByClassName("year");
+		year.innerHTML=date.getFullYear()
 	</script>
 
 	<!-- End Script API COVID19API  -->
