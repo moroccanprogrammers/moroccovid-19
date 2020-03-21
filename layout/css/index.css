@@ -156,7 +156,9 @@ font-size: 50px;
 /* Start Footer */
 
 .footer{
-    padding: 10px;
+	padding: 10px;
+	margin-top: 1.5rem;
+	background-color: #EEE;
 }
 .footer ul{
     margin: 0;
