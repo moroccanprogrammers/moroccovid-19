@@ -1,4 +1,9 @@
 
+<p align="center"></br></br></br></br>
+<img src="corona/assets/style/Logo-01.png" width="250px" align="middle" />
+</p></br></br></br></br>
+
+
 ## 01 - About Project
 
 This is a redesign of the past web project, Moroccovid-19, With a large number of rounded corners and white space, users can freely control the relevant columns of the home page for easy operation, users can also get the latest news from trusted sources.
@@ -26,3 +31,8 @@ git commit -m "Made some changes"
 ## 04 - License
 
 Do whatever you want with this project just don't, not for commercial use
+
+
+<p align="center"></br></br></br></br>
+<img src="corona/assets/style/logo-2-01.png" width="200px" align="middle" />
+</p>
