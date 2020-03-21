@@ -266,5 +266,8 @@ body {
 .nav-link{
 	font-size: 20px;
 	margin-right: 25px;
+}
 
+.corona iframe {
+	width: 100%;
 }
