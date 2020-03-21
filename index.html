@@ -168,48 +168,22 @@
 						<h1 class="wtm">نصائح للوقاية من فيروس كورونا</h1>
 					</div>
 					<div class="panel-body">
-						<div class="row justify-content-center mt-5">
+						<div class="">
 							<div>
-								<div class="row">
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img1.jpg" class="img-fluid">
-									</a>
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img2.jpg" class="img-fluid">
-									</a>
-
+								<div style="display: flex;justify-content: center;">
+									<img src="./layout/images/img1.jpg" class="img-fluid" id="img">
 								</div>
-								<div class="row">
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img3.jpg" class="img-fluid">
-									</a>
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img4.jpg" class="img-fluid">
-									</a>
+								<div>
+									<ul class="list">
+										<li class="list__item active__item" data-value="1"></li>
+										<li class="list__item" data-value="2"></li>
+										<li class="list__item" data-value="3"></li>
+										<li class="list__item" data-value="4"></li>
+										<li class="list__item" data-value="5"></li>
+										<li class="list__item" data-value="6"></li>
+										<li class="list__item" data-value="7"></li>
+									</ul>
 								</div>
-								<div class="row">
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img5.jpg" class="img-fluid">
-									</a>
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img6.jpg" class="img-fluid">
-									</a>
-								</div>
-								<div class="row">
-									<a href="#" class="col-md-6 link">
-										<img src="./layout/images/img7.jpg" class="img-fluid" />
-									</a>
-									<a href="#" class="col-md-6 link">
-										<img src="./layout/images/img7.jpg" class="img-fluid" />
-									</a>
-								</div>
-
 							</div>
 						</div>
 					</div>
@@ -311,7 +285,7 @@
 					</div>
 					<div class="col-sm-6  text-center text-sm-right">
 						<ul class="list-unstyled">
-							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -329,8 +303,8 @@
 	<script>
 
 		const api_url = 'https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco/';
-
-
+		const items = document.getElementsByClassName('list__item');
+		const img = document.getElementById('img');
 		async function getData() {
 
 			const response = await fetch(api_url);
@@ -346,6 +320,20 @@
 		}
 
 		getData();
+		for (let i = 0; i < items.length; i++) {
+			items[i].addEventListener('click', (e) => {
+
+				for (let j = 0; j < items.length; j++) {
+					items[j].className = items[j].className.replace(" active__item", "");
+				}
+
+				let dataValue = e.srcElement.getAttribute("data-value");
+
+				img.src = `./layout/images/img${dataValue}.jpg`;
+				items[dataValue - 1].className += " active__item";
+			});
+		}
+
 	</script>
 
 	<!-- End Script API COVID19API  -->
