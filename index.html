@@ -9,6 +9,13 @@
 	<link href="layout/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="layout/css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<link href="layout/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
 	<link href="layout/css/index.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -31,7 +38,7 @@
 						<a class="nav-link" href="#latest">مستجدات فيروس</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#tips">نصائح للوقاية</a>
+						<a class="nav-link" href="#portfolio">نصائح للوقاية</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#map">مواقع تواجد الفيروس</a>
@@ -52,26 +59,30 @@
 				<h1 class="wtm">مستجدات فيروس كورونا بالمغرب</h1>
 			</div>
 			<div class="panel-body">
-				<div class="row mt-5">
-					<div class="col-md-4">
-						<div class="stat btn-warning">
-							الحالات المؤكدة
-							<span id="tC">-</span>
-						</div>
-					</div>
+				<div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-globe text-warning mb-4"></i>
+                            <h3 class="h4 mb-2 text-muted">الحالات المؤكدة</h3>
+                            <h2 class="text-warning mb-0" id="tC">-</h2>
+                        </div>
+                    </div>
 
-					<div class="col-md-4">
-						<div class="stat btn-success">
-							المتعافون
-							<span id="tR">-</span>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="stat btn-danger border-primary">
-							الوفيات
-							<span id="tD">-</span>
-						</div>
-					</div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-user-md text-success mb-4"></i>
+                            <h3 class="h4 mb-2 text-muted">عدد المتعافون</h3>
+                            <h2 class="text-success mb-0" id="tR">-</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-4x fa-sad-tear text-danger mb-4"></i>
+                            <h3 class="h4 mb-2 text-muted">الوفايات</h3>
+                            <h2 class="text-danger mb-0" id="tD">2</h2>
+                        </div>
+                    </div>
 
 				</div>
 			</div>
@@ -160,63 +171,59 @@
 			</div>
 		</div>
 	</div>
-	<div class="container tips mt-5" id="tips">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="panel">
-					<div class="text-center">
-						<h1 class="wtm">نصائح للوقاية من فيروس كورونا</h1>
-					</div>
-					<div class="panel-body">
-						<div class="row justify-content-center mt-5">
-							<div>
-								<div class="row">
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img1.jpg" class="img-fluid">
-									</a>
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img2.jpg" class="img-fluid">
-									</a>
-
-								</div>
-								<div class="row">
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img3.jpg" class="img-fluid">
-									</a>
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img4.jpg" class="img-fluid">
-									</a>
-								</div>
-								<div class="row">
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img5.jpg" class="img-fluid">
-									</a>
-									<a href="#" data-toggle="lightbox" data-gallery="example-gallery"
-										class="col-md-6 link">
-										<img src="./layout/images/img6.jpg" class="img-fluid">
-									</a>
-								</div>
-								<div class="row">
-									<a href="#" class="col-md-6 link">
-										<img src="./layout/images/img7.jpg" class="img-fluid" />
-									</a>
-									<a href="#" class="col-md-6 link">
-										<img src="./layout/images/img7.jpg" class="img-fluid" />
-									</a>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<section id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/thumbnails/1.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">نصائح وقائية </div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/thumbnails/2.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">اعراض الفيروس</div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/thumbnails/3.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">تجنب الاتصال المباشر</div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/thumbnails/4.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">خليك فدارك و هادي ماشي عطلة</div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/thumbnails/5.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">طلع المورال</div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/thumbnails/6.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-name">نصائح للوقاية</div>
+                            </div></a  >
+                    </div>
+                </div>
+            </div>
+        </section>
 	<div class="container text-center map" id="map">
 		<div class="row">
 			<div class="col-sm-12">
@@ -372,6 +379,14 @@
 
 		getData();
 	</script>
+	     <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="layout/js/scripts.js"></script>
 
 	<!-- End Script API COVID19API  -->
 
