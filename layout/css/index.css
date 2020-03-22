@@ -7,6 +7,7 @@ html
 
 body {
 	background-color:white;
+	font-family: 'Cairo', sans-serif !important;
 	font-size: 30px;
 	color: #fff;
 }
@@ -94,6 +95,45 @@ body {
 
 /* End Upper bar */
 
+/* Start Analytic Content */
+.banner{
+    background: rgba(5, 111, 197, 0.219);
+    color: #03157b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin: 1.5rem 0rem;
+    padding: 10px 15px;
+}
+
+.page-content{
+    text-align: right;
+}
+.icn{
+font-size: 50px;
+}
+.news-content{
+    text-align: right;
+    margin: 1.5rem 0rem;
+}
+
+.news-content ul{
+    display: block;
+}
+
+.news-content ul li{
+    direction: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+.card-header {
+    text-align: -webkit-right;
+}
+/* End Analytic Content */
+
 /* Start Body */
 
 .corona iframe {
@@ -114,11 +154,9 @@ body {
 } 
 
 .home-stats .stat {
-	background-color: #2FA4E7;
 	BORDER: 1px solid #ccc;
-	padding:20px;
-	font-size: 30px;
-	border-radius: 10px;
+	padding:10px;
+	border-radius: 4px;
 }
 
 .home-stats .stat span {
@@ -277,11 +315,9 @@ body {
 /* Start Footer */
 
 .footer{
-    padding: 10px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: white;
-    background-color: #4b4b49;
+	padding: 10px;
+	margin-top: 1.5rem;
+	background-color: #EEE;
 }
 .footer ul{
     margin: 0;
