@@ -326,70 +326,85 @@
 					<div class="panel panel-body">
 						<div class="maplist">
 							<div class="row">
-
 								<div class="col-md-4">
-
-									<div class="grid-item btn btn-primary">
-										جهة الرباط سلا القنيطرة
-										<span class="btn btn-danger" id="Rabat-Salé-Kenitra">0</span>
-									</div>
-
+								  <div class="grid-item btn btn-primary">
+									جهة الرباط سلا القنيطرة
+									<span class="btn btn-danger" id ='RabatSalKenitra'>-</span>
+								  </div>
 								</div>
 								<div class="col-md-4">
-									<div class="grid-item btn btn-primary">
-										جهة الدار البيضاء سطات
-										<span class="btn btn-danger" id="Casa-Settat">0</span>
-									</div>
+								  <div class="grid-item btn btn-primary">
+									جهة الدار البيضاء سطات
+									<span class="btn btn-danger" id ='CasaSettat'>-</span>
+								  </div>
 								</div>
 								<div class="col-md-4">
-									<div class="grid-item btn btn-primary">
-										جهة فاس مكناس
-										<span class="btn btn-danger" id="Fès-meknes">0</span>
-									</div>
+								  <div class="grid-item btn btn-primary">
+									جهة فاس مكناس
+									<span class="btn btn-danger" id ='Fsmeknes'>-</span>
+								  </div>
 								</div>
-							</div>
-							<div class="row">
-
+							  </div>
+							  <div class="row">
 								<div class="col-md-4">
-									<div class="grid-item btn btn-primary">
-										جهة مراكش آسفي
-										<span class="btn btn-danger" id="Marrakech-Safi">0</span>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="grid-item btn btn-primary">
-										جهة سوس ماسة
-										<span class="btn btn-danger" id="Souss-Massa">0</span>
-									</div>
+								  <div class="grid-item btn btn-primary">
+									جهة مراكش آسفي
+									<span class="btn btn-danger" id ='MarrakechSafi'>-</span>
+								  </div>
 								</div>
 								<div class="col-md-4">
-									<div class="grid-item btn btn-primary">
-										جهة طنجة تطوان الحسيمة
-										<span class="btn btn-danger" id="Tanger-Tetouan-Al-Hoceima">0</span>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4">
-									<div class="grid-item btn btn-primary">
-										جهة بني ملال خنيفرة
-										<span class="btn btn-danger" id="Beni-Mellal-Khénifra">0</span>
-									</div>
+								  <div class="grid-item btn btn-primary">
+									جهة سوس ماسة
+									<span class="btn btn-danger" id ='SoussMassa'>-</span>
+								  </div>
 								</div>
 								<div class="col-md-4">
-									<div class="grid-item btn btn-primary">
-										جهة الشرق
-										<span class="btn btn-danger" id="charq">0</span>
-									</div>
+								  <div class="grid-item btn btn-primary">
+									جهة طنجة تطوان الحسيمة
+									<span class="btn btn-danger" id ='TangerTetouanAlHoceima'>-</span>
+								  </div>
+								</div>
+							  </div>
+							  <div class="row">
+								<div class="col-md-4">
+								  <div class="grid-item btn btn-primary">
+									جهة بني ملال خنيفرة
+									<span class="btn btn-danger" id ='BeniMellalKhnifra'>-</span>
+								  </div>
 								</div>
 								<div class="col-md-4">
-									<div class="grid-item btn btn-primary">
-										جهة كلميم واد نون
-										<span class="btn btn-danger" id="Guelmim-Oued-Noun">0</span>
-									</div>
-
+								  <div class="grid-item btn btn-primary">
+									جهة الشرق
+									<span class="btn btn-danger" id ='Oriental'>-</span>
+								  </div>
 								</div>
-							</div>
+								<div class="col-md-4">
+								  <div class="grid-item btn btn-primary">
+									جهة كلميم واد نون
+									<span class="btn btn-danger" id ='GuelmimOuedNoun'>-</span>
+								  </div>
+								</div>
+							  </div>
+							  <div class="row">
+								<div class="col-md-4">
+								  <div class="grid-item btn btn-primary">
+								جهة الداخلة واد الذهب
+									<span class="btn btn-danger" id ='DakhlaOuedEdDahab'>-</span>
+								  </div>
+								</div>
+								<div class="col-md-4">
+								  <div class="grid-item btn btn-primary">
+									جهة العيون الساقية الحمراء
+									<span class="btn btn-danger" id ='LayouneSakiaElHamra'>-</span>
+								  </div>
+								</div>
+								<div class="col-md-4">
+								  <div class="grid-item btn btn-primary">
+								  جهة درعة تافيلالت
+									<span class="btn btn-danger" id ='Daraatafilalet'>-</span>
+								  </div>
+								</div>
+							  </div>
 						</div>
 					</div>
 				</div>
@@ -447,7 +462,7 @@
 
 <script>
 
-	const api_url = 'https://moroccovid-19-api.herokuapp.com/';
+	const api_url = 'https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco';
 
 	async function getData() {
 	
@@ -455,21 +470,15 @@
 		const data = await response.json();
 		
 		//t = total
-		var tConfirmed = data.cases;
-		var tActive = data.active;
-		var tDeaths = data.deaths;
+		var tConfirmed = data.totalcases;
+		var tActive = data.activecases;
+		var tDeaths = data.totaldeaths;
 		var tRecovered = data.recovered;
 	
 		document.getElementById("tC").textContent = tConfirmed;
 		document.getElementById("tA").textContent = tActive;
 		document.getElementById("tD").textContent = tDeaths;
 		document.getElementById("tR").textContent = tRecovered;
-
-		data.regions.forEach(function(region) {
-			if (document.getElementById(region.reg.replace(/ /g, '-'))) {
-				document.getElementById(region.reg.replace(/ /g, '-')).innerText = region.count
-			}
-		})
 	}
 	
 			getData();
@@ -477,6 +486,46 @@
 		</script>
 	
 		<!-- End Script API COVID19API  -->
+
+		<!--Get regions counts from api-->
+		<script>
+			const regi_url =
+        "https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco/regions";
+
+      async function getRegions() {
+        const response = await fetch(regi_url);
+        const data = await response.json();
+
+        var Fsmeknes = data.Fsmeknes;
+        var MarrakechSafi = data.MarrakechSafi;
+        var RabatSalKenitra = data.RabatSalKenitra;
+        var TangerTetouanAlHoceima = data.TangerTetouanAlHoceima;
+        var CasaSettat = data.CasaSettat;
+        var GuelmimOuedNoun = data.GuelmimOuedNoun;
+        var Oriental = data.Oriental;
+        var SoussMassa = data.SoussMassa;
+        var Daraatafilalet = data.Daraatafilalet;
+        var BeniMellalKhnifra = data.BeniMellalKhnifra;
+        var LayouneSakiaElHamra = data.LayouneSakiaElHamra;
+        var DakhlaOuedEdDahab = data.DakhlaOuedEdDahab;
+
+        document.getElementById("Fsmeknes").textContent = Fsmeknes;
+        document.getElementById("MarrakechSafi").textContent = MarrakechSafi;
+        document.getElementById("RabatSalKenitra").textContent = RabatSalKenitra;
+        document.getElementById("TangerTetouanAlHoceima").textContent = TangerTetouanAlHoceima;
+        document.getElementById("CasaSettat").textContent = CasaSettat;
+        document.getElementById("GuelmimOuedNoun").textContent = GuelmimOuedNoun;
+        document.getElementById("Oriental").textContent = Oriental;
+        document.getElementById("SoussMassa").textContent = SoussMassa;
+        document.getElementById("Daraatafilalet").textContent = Daraatafilalet;
+        document.getElementById("BeniMellalKhnifra").textContent = BeniMellalKhnifra;
+        document.getElementById("LayouneSakiaElHamra").textContent = LayouneSakiaElHamra;
+        document.getElementById("DakhlaOuedEdDahab").textContent = DakhlaOuedEdDahab;
+      }
+
+      getRegions();
+		</script>
+		<!--End Regions api-->
 
 </body>
 
