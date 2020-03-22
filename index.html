@@ -35,7 +35,7 @@
 
 <body>
 	<!-- Start Uper Bar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-fixed">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary position-fixed" style="top: 0; overflow: hidden !important;">
 		<div class="container">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
 				aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,10 +46,10 @@
 				<img src="./layout/images/icon.png" class="logo">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#nombres"> أرقام لضرورة <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#Analytic">مستجدات فيروس</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#Analytic">مستجدات فيروس</a>
+						<a class="nav-link" href="#nombres"> أرقام لضرورة <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#tips">نصائح للوقاية</a>
@@ -66,7 +66,7 @@
 	<!-- Start Body -->
 
 	<!-- Start Welcome Banner-->
-	<div class="banner container">
+	<div class="banner container"  style="margin-top: 100px !important;">
 		<div class="col-xl-2 col-lg-3 col-md-12"> 
 			<img src="layout/images/new_message.svg" alt="image" class="image"> 
 		</div>
@@ -79,49 +79,6 @@
 		</div>
 	</div>
 	<!-- End Welcome Banner-->
-
-	<!-- Start Important Numbers Contant -->
-	<div class="container home-stats text-center mt-5" id="nombres">
-		<div class="panel-heading text-center mt-5">
-			<h1 class="wtm">أرقام للضرورة</h1>
-		</div>
-		<div class="row mt-5">
-			<div class="col-md-4">
-				<div class="stat">
-					<i class="fa fa-university"></i> <span>INSTITUT PASTEUR</span><b>0522262062</b>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="stat">
-					<i class="fa fa-user-nurse"></i> <span>SOS MÉDECINS</span><b>0522989898</b>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="stat">
-					<i class="fa fa-skull-crossbones"></i> <span>CENTRE ANTIPOISON</span><b>0801000180</b>
-				</div>
-			</div>
-		</div>
-
-		<div class="row mt-5">
-			<div class="col-md-4">
-				<div class="stat">
-					<i class="fa fa-headset"></i> <span>RENSEIGNMENT</span><b>160</b>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="stat">
-					<i class="fa fa-ambulance"></i> <span>AMBULANCE</span><b>150</b>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="stat">
-					<i class="fa fa-phone"></i> <span>POLICE</span><b>190</b>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Important Numbers Content -->
 
 	<!-- Start Analytic Content -->
 	<div class="container home-stats text-center mt-5" id="Analytic">
@@ -198,6 +155,51 @@
 	</div>
 	<!-- End Analytic Content -->
 
+	<!-- Start Important Numbers Contant -->
+	<div class="container home-stats text-center mt-5" id="nombres">
+		<div class="panel-heading text-center mt-5">
+			<h1 class="wtm">أرقام للضرورة</h1>
+		</div>
+		<div class="row mt-5">
+			<div class="col-md-4">
+				<div class="stat">
+					<i class="fa fa-university"></i> <span>INSTITUT PASTEUR</span><b>0522262062</b>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="stat">
+					<i class="fa fa-user-nurse"></i> <span>SOS MÉDECINS</span><b>0522989898</b>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="stat">
+					<i class="fa fa-skull-crossbones"></i> <span>CENTRE ANTIPOISON</span><b>0801000180</b>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-md-4">
+				<div class="stat">
+					<i class="fa fa-headset"></i> <span>RENSEIGNMENT</span><b>160</b>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="stat">
+					<i class="fa fa-ambulance"></i> <span>AMBULANCE</span><b>150</b>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="stat">
+					<i class="fa fa-phone"></i> <span>POLICE</span><b>190</b>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Important Numbers Content -->
+
+	
+	
 	<!-- Start News Content -->
 	<div class="news-content container">
 		<div class="row">
@@ -398,7 +400,7 @@
 
 	<!-- Start form	-->
 
-	<p class="h2" id='form-p'> لا تنسى التسجيل بإدخال  بريدك الإلكتروني <br>
+	<p class="h2" id='form-p'> لا تنسى التسجيل بإدخال اسمك وبريدك الإلكتروني <br>
 		لتبقى بذلك متتبع لكل ما هو جديد ولمتابعة آخر التحديثات </p>
 
 
@@ -440,17 +442,6 @@
 	</footer>
 	
 	<!-- End Footer -->
-          <!-- Start Spinner Loading -->
-        <div class="loading">
-          <div class="spinner">
-          <div class="double-bounce1"></div>
-          <div class="double-bounce2"></div>
-          </div>
-        </div>
-           <!--End spinner Loading -->
-
-        <script src="corona/assets/style/main.js"></script>
-        <script src="corona/assets/style/jquery.magnific-popup.min.js"></script>
 
 <!-- Start Script API COVID19API  -->
 
