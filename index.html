@@ -430,40 +430,74 @@
 	
 	<!-- End Footer -->
 
-	<!-- Start Script API COVID19API  -->
-
+	
+	<!-- End Script API COVID19API  -->
 	<script>
 
-		const api_url = 'https://coronavirus-19-api.herokuapp.com/countries/morocco';
-		
+		const api_url = 'https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco';
+	
 		async function getData() {
 		
 			const response = await fetch(api_url);
 			const data = await response.json();
 			
 			//t = total
-			var tConfirmed = data.cases;
-			var tActive = data.active;
-			var tDeaths = data.deaths;
+			var tConfirmed = data.totalcases;
+			var tActive = data.activecases;
+			var tDeaths = data.totaldeaths;
 			var tRecovered = data.recovered;
 		
 			document.getElementById("tC").textContent = tConfirmed;
 			document.getElementById("tA").textContent = tActive;
 			document.getElementById("tD").textContent = tDeaths;
 			document.getElementById("tR").textContent = tRecovered;
-
 		}
 		
-		getData();
-
-		//dynamic year in the copy right section  
-		var date = new Date();
-		var year = document.getElementsByClassName("year");
-		year.innerHTML=date.getFullYear()
-
-	</script>
+				getData();
+		
+			</script>
+		
+			<!-- End Script API COVID19API  -->
 	
-	<!-- End Script API COVID19API  -->
+			<!--Get regions counts from api-->
+			<script>
+				const regi_url =
+			"https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco/regions";
+	
+		  async function getRegions() {
+			const response = await fetch(regi_url);
+			const data = await response.json();
+	
+			var Fsmeknes = data.Fsmeknes;
+			var MarrakechSafi = data.MarrakechSafi;
+			var RabatSalKenitra = data.RabatSalKenitra;
+			var TangerTetouanAlHoceima = data.TangerTetouanAlHoceima;
+			var CasaSettat = data.CasaSettat;
+			var GuelmimOuedNoun = data.GuelmimOuedNoun;
+			var Oriental = data.Oriental;
+			var SoussMassa = data.SoussMassa;
+			var Daraatafilalet = data.Daraatafilalet;
+			var BeniMellalKhnifra = data.BeniMellalKhnifra;
+			var LayouneSakiaElHamra = data.LayouneSakiaElHamra;
+			var DakhlaOuedEdDahab = data.DakhlaOuedEdDahab;
+	
+			document.getElementById("Fsmeknes").textContent = Fsmeknes;
+			document.getElementById("MarrakechSafi").textContent = MarrakechSafi;
+			document.getElementById("RabatSalKenitra").textContent = RabatSalKenitra;
+			document.getElementById("TangerTetouanAlHoceima").textContent = TangerTetouanAlHoceima;
+			document.getElementById("CasaSettat").textContent = CasaSettat;
+			document.getElementById("GuelmimOuedNoun").textContent = GuelmimOuedNoun;
+			document.getElementById("Oriental").textContent = Oriental;
+			document.getElementById("SoussMassa").textContent = SoussMassa;
+			document.getElementById("Daraatafilalet").textContent = Daraatafilalet;
+			document.getElementById("BeniMellalKhnifra").textContent = BeniMellalKhnifra;
+			document.getElementById("LayouneSakiaElHamra").textContent = LayouneSakiaElHamra;
+			document.getElementById("DakhlaOuedEdDahab").textContent = DakhlaOuedEdDahab;
+		  }
+	
+		  getRegions();
+			</script>
+			<!--End Regions api-->
 
 	<!-- Bootstrap core JS-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
