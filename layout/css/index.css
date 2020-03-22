@@ -321,7 +321,8 @@ font-size: 50px;
 }
 .footer ul{
     margin: 0;
-	float: left;
+	display: flex;
+	justify-content: center;
 }
 .footer ul li{
     display: inline-block;

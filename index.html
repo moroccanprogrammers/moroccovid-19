@@ -341,20 +341,20 @@
 
 									<div class="grid-item btn btn-primary">
 										جهة الرباط سلا القنيطرة
-										<span class="btn btn-danger" id="Rabat-Salé-Kenitra">29</span>
+										<span class="btn btn-danger" id="RabatSalKenitra">-</span>
 									</div>
 
 								</div>
 								<div class="col-md-4">
 									<div class="grid-item btn btn-primary">
 										جهة الدار البيضاء سطات
-										<span class="btn btn-danger" id="Casa-Settat">26</span>
+										<span class="btn btn-danger" id="CasaSettat">-</span>
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="grid-item btn btn-primary">
 										جهة فاس مكناس
-										<span class="btn btn-danger" id="Fès-meknes">24</span>
+										<span class="btn btn-danger" id="Fsmeknes">-</span>
 									</div>
 								</div>
 							</div>
@@ -363,19 +363,19 @@
 								<div class="col-md-4">
 									<div class="grid-item btn btn-primary">
 										جهة مراكش آسفي
-										<span class="btn btn-danger" id="Marrakech-Safi">13</span>
+										<span class="btn btn-danger" id="MarrakechSafi">-</span>
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="grid-item btn btn-primary">
 										جهة سوس ماسة
-										<span class="btn btn-danger" id="Souss-Massa">6</span>
+										<span class="btn btn-danger" id="SoussMassa">-</span>
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="grid-item btn btn-primary">
 										جهة طنجة تطوان الحسيمة
-										<span class="btn btn-danger" id="Tanger-Tetouan-Al-Hoceima">7</span>
+										<span class="btn btn-danger" id="TangerTetouanAlHoceima">-</span>
 									</div>
 								</div>
 							</div>
@@ -383,19 +383,19 @@
 								<div class="col-md-4">
 									<div class="grid-item btn btn-primary">
 										جهة بني ملال خنيفرة
-										<span class="btn btn-danger" id="Beni-Mellal-Khénifra">3</span>
+										<span class="btn btn-danger" id="BeniMellalKhnifra">-</span>
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="grid-item btn btn-primary">
 										جهة الشرق
-										<span class="btn btn-danger" id="charq">5</span>
+										<span class="btn btn-danger" id="Oriental">-</span>
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="grid-item btn btn-primary">
 										جهة كلميم واد نون
-										<span class="btn btn-danger" id="Guelmim-Oued-Noun">1</span>
+										<span class="btn btn-danger" id="GuelmimOuedNoun">-</span>
 									</div>
 
 								</div>
@@ -414,10 +414,10 @@
 	<footer class="footer">
 		<div class="home-contact container">
 			<div class="row">
-				<div class="col-sm-6 text-center text-sm-left">
+				<div class="col-sm-6 text-center text-sm-right">
 					Copyright &copy; <span class="year">2020</span> Moroccovid-19
 				</div>
-				<div class="col-sm-6  text-center text-sm-right">
+				<div class="col-sm-6 text-sm-left">
 					<ul class="nav list-unstyled">
 						<li ><a href="#"><i class="fab fa-facebook-f"  style="color: #4267B2;"></i></a></li>
 						<li ><a href="#"><i class="fab fa-twitter"  style="color: #1DCAFF;"></i></a></li>
@@ -467,6 +467,7 @@
 		  async function getRegions() {
 			const response = await fetch(regi_url);
 			const data = await response.json();
+		
 	
 			var Fsmeknes = data.Fsmeknes;
 			var MarrakechSafi = data.MarrakechSafi;
@@ -476,10 +477,7 @@
 			var GuelmimOuedNoun = data.GuelmimOuedNoun;
 			var Oriental = data.Oriental;
 			var SoussMassa = data.SoussMassa;
-			var Daraatafilalet = data.Daraatafilalet;
 			var BeniMellalKhnifra = data.BeniMellalKhnifra;
-			var LayouneSakiaElHamra = data.LayouneSakiaElHamra;
-			var DakhlaOuedEdDahab = data.DakhlaOuedEdDahab;
 	
 			document.getElementById("Fsmeknes").textContent = Fsmeknes;
 			document.getElementById("MarrakechSafi").textContent = MarrakechSafi;
@@ -489,10 +487,7 @@
 			document.getElementById("GuelmimOuedNoun").textContent = GuelmimOuedNoun;
 			document.getElementById("Oriental").textContent = Oriental;
 			document.getElementById("SoussMassa").textContent = SoussMassa;
-			document.getElementById("Daraatafilalet").textContent = Daraatafilalet;
 			document.getElementById("BeniMellalKhnifra").textContent = BeniMellalKhnifra;
-			document.getElementById("LayouneSakiaElHamra").textContent = LayouneSakiaElHamra;
-			document.getElementById("DakhlaOuedEdDahab").textContent = DakhlaOuedEdDahab;
 		  }
 	
 		  getRegions();
