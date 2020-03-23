@@ -14,6 +14,41 @@ body {
 
 /* End Main Rulez */
 
+/* Start Navbar */
+
+
+.navbar-shadow {
+	background-color: rgba(0, 123, 255, 0.5);
+	box-shadow: 0px 0px 4px 1px #000;
+	transition: .5s
+}
+
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: var(--white) !important;
+    transition: .6s !important;
+}
+
+.navbar-light .navbar-toggler:hover,
+.scroll-to-top a:hover,
+.navbar-light .navbar-brand:focus, 
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link {
+	color: var(--red) !important;
+}
+
+
+.navbar-light .navbar-toggler {
+	border-color : var(--white) !important;
+}
+
+
 /* Start Bootstrap Edits */
 
 .navbar {
@@ -45,6 +80,7 @@ body {
     height: auto;
 }
 
+<<<<<<< HEAD
 /* .panel-heading {
 
 	background-color: #2FA4E7 !important;
@@ -53,6 +89,8 @@ body {
 	 */
 }
 
+=======
+>>>>>>> my
 .nav-link {
 	font-size: 25px !important;
 }
@@ -175,6 +213,7 @@ font-size: 50px;
 /* Start Map */
 
 .map {
+<<<<<<< HEAD
 	margin-top: 30px;
 }
 .mapdiv {
@@ -194,6 +233,11 @@ font-size: 50px;
 	stroke: #dece0c;
 	stroke-width: 4px;
 	transition: fill 0.3s;
+=======
+	
+	margin-top: 20px;
+	
+>>>>>>> my
 }
 
 .maplist a {
@@ -212,16 +256,19 @@ font-size: 50px;
 
 .maplist .grid-item span {
 	display: block;
-    background-color: #dece0c;
     width: 50%;
     margin: 0 auto;
     font-size: 17px;
 }
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
 	.mapdiv {
 		width: 100%;
 	}
+=======
+	
+>>>>>>> my
 	.maplist {
 		width: 100%;
 		margin: 0;
@@ -230,6 +277,7 @@ font-size: 50px;
 
 /* End Map */
 
+<<<<<<< HEAD
 /* End Body
 
 
@@ -272,8 +320,22 @@ font-size: 50px;
 	background-color: #fff;
 	color: #2FA4E7;
 }
+=======
+/* Start graph  */ 
 
-/* end form  */
+.graph {
+	margin-top: 20px;
+}
+.chart {
+    width: 100%;
+    height: 450px;
+	margin-top: 20px;
+}
+
+/* End graph */
+>>>>>>> my
+
+/* End Body */
 
 /* Start Footer */
 
@@ -416,16 +478,17 @@ font-size: 50px;
 /*End Spinner Loading */
 
 #tips .container-fluid, #tips .container-sm, #tips .container-md, #tips .container-lg, #tips .container-xl {
-  max-width: 1920px;
+	max-width: 1920px;
 }
 #tips .container-fluid .portfolio-box, #tips .container-sm .portfolio-box, #tips .container-md .portfolio-box, #tips .container-lg .portfolio-box, #tips .container-xl .portfolio-box {
-  position: relative;
-  display: block;
-  border-color: #007bff;
-border-width: 3px;
-border-style: solid;
+	position: relative;
+	display: block;
+	border-color: #f2f2f2;
+	border-width: 3px;
+	border-style: solid;
 }
 #tips .container-fluid .portfolio-box .portfolio-box-caption, #tips .container-sm .portfolio-box .portfolio-box-caption, #tips .container-md .portfolio-box .portfolio-box-caption, #tips .container-lg .portfolio-box .portfolio-box-caption, #tips .container-xl .portfolio-box .portfolio-box-caption {
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
@@ -439,15 +502,31 @@ border-style: solid;
   color: #fff;
   background:  rgba(103, 133, 136, 0.9);
   transition: opacity 0.25s ease;
+=======
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	opacity: 0;
+	color: #fff;
+	background:  rgba(103, 133, 136, 0.9);
+	transition: opacity 0.25s ease;
+	text-align: center;
+>>>>>>> my
 }
 #tips .container-fluid .portfolio-box .portfolio-box-caption .project-category, #tips .container-sm .portfolio-box .portfolio-box-caption .project-category, #tips .container-md .portfolio-box .portfolio-box-caption .project-category, #tips .container-lg .portfolio-box .portfolio-box-caption .project-category, #tips .container-xl .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
+	font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 0.85rem;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 #tips .container-fluid .portfolio-box .portfolio-box-caption .project-name, #tips .container-sm .portfolio-box .portfolio-box-caption .project-name, #tips .container-md .portfolio-box .portfolio-box-caption .project-name, #tips .container-lg .portfolio-box .portfolio-box-caption .project-name, #tips .container-xl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 #tips .container-fluid .portfolio-box:hover .portfolio-box-caption, #tips .container-sm .portfolio-box:hover .portfolio-box-caption, #tips .container-md .portfolio-box:hover .portfolio-box-caption, #tips .container-lg .portfolio-box:hover .portfolio-box-caption, #tips .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
@@ -455,11 +534,41 @@ border-style: solid;
 
 #tips img{
 	width: 100%;
+<<<<<<< HEAD
     height: 250px;
+=======
+	height: 250px;
+>>>>>>> my
 }
 
 #tips{
 	margin-top: 60px;
     margin-bottom: 60px;
+<<<<<<< HEAD
     padding: 37px;
 }
+=======
+}	
+
+/* Start Scroll To Top */
+
+.scroll-to-top {
+	display: none;
+	padding: 0;
+	vertical-align: top;
+	width: 45px;
+	height: 45px;
+	position: fixed;
+	right: 15px;
+	bottom: 25px;
+	display: none;
+	z-index: 9999;
+}
+
+.scroll-to-top a {
+	color: var(--blue);
+	transition: .6s;
+}
+
+/* End Scroll To Top */
+>>>>>>> my

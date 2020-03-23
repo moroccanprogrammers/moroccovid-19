@@ -3,7 +3,7 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
     */
-    (function($) {
+  (function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -46,22 +46,6 @@
 })(jQuery); // End of use strict
 
 
-// function myFunction() {
-//   var dots = document.getElementById("dots");
-//   var moreText = document.getElementById("more");
-//   var btnText = document.getElementById("myBtn");
-
-//   if (dots.style.display === "none") {
-//     dots.style.display = "inline";
-//     btnText.innerHTML = "المزيد";
-//     moreText.style.display = "none";
-//   } else {
-//     dots.style.display = "none";
-//     btnText.innerHTML = "إخفاء";
-//     moreText.style.display = "inline";
-//   }
-// }
-
 $(document).ready(function() {
 
  
@@ -78,10 +62,41 @@ $(document).ready(function() {
          $(this).next().text("المزيد");
         });
       }
-        //  $(this).prev().fadeOut(100, function(){
-        //   $(this).text().html("المزيد");
-        // });
-
         
+    });
+	
+	// Start Chnage Nav
+	
+	$(window).trigger('scroll');
+	$(window).on('scroll', function () {
+		var pixels = 50; 
+		if ($(window).scrollTop() > pixels) {
+			$('.navbar-expand-lg').addClass('navbar-shadow');
+			$('.navbar-expand-lg').removeClass('bg-primary');
+		} else {
+			$('.navbar-expand-lg').addClass('bg-primary');
+			$('.navbar-expand-lg').removeClass('navbar-shadow');
+		}
+	});
+	
+	// Start scroll To Top
+
+    var scrollToTop = $('.scroll-to-top');
+    $(window).on('scroll', function () 
+                 {
+        if ($(window).scrollTop() >= 500) {
+            if (! scrollToTop.is(':visible')) {
+                scrollToTop.fadeIn(600);
+            }
+        } else {
+            if (scrollToTop.is(':visible')) {
+                scrollToTop.fadeOut(600);
+            }
+        }
+    });
+    $('.scroll-to-top a').on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 0);
     });
 });
