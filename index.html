@@ -491,7 +491,14 @@
 		  }
 
 		  getRegions();
-			
+
+			// add class active to active link & remove from it siblings
+			// document.getElementById('navbar-links').querySelectorAll('li').forEach(item => {
+			// 	item.onclick = function() {
+			// 		this.clas
+			// 	}
+			// })
+
 		</script>
 		<!--End Regions api-->
 
@@ -505,9 +512,14 @@
 	<script src="layout/js/scripts.js"></script>
 	<script>
 		$(function() {
-			$('#navbar-links ul li').each(function() {
-				$(this).click(function(el) {
-					console.log($(el).attr('class'));
+			// add class active to active link & remove from it siblings
+			var allLinks = $('#navbar-links li')
+			allLinks.each(function() {
+				$(this).find('a').click(function() {
+					allLinks.each(function() {
+						$(this).removeClass('active')
+					})
+					$(this).parent().addClass('active')
 				})
 			})
 		})
