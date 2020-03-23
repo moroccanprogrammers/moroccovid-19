@@ -14,6 +14,41 @@ body {
 
 /* End Main Rulez */
 
+/* Start Navbar */
+
+
+.navbar-shadow {
+	background-color: rgba(0, 123, 255, 0.5);
+	box-shadow: 0px 0px 4px 1px #000;
+	transition: .5s
+}
+
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: var(--white) !important;
+    transition: .6s !important;
+}
+
+.navbar-light .navbar-toggler:hover,
+.scroll-to-top a:hover,
+.navbar-light .navbar-brand:focus, 
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link {
+	color: var(--red) !important;
+}
+
+
+.navbar-light .navbar-toggler {
+	border-color : var(--white) !important;
+}
+
+
 /* Start Bootstrap Edits */
 
 .navbar {
@@ -44,13 +79,7 @@ body {
     max-width: 45%;
     height: auto;
 }
-/* .panel-heading {
-	
-	background-color: #2FA4E7 !important;
-	color: #fff !important;
-	border-color: #ddd;
-	 */
-}
+
 .nav-link {
 	font-size: 25px !important;
 }
@@ -181,41 +210,9 @@ font-size: 50px;
 
 .map {
 	
-	margin-top: 30px;
+	margin-top: 20px;
 	
 }
-.mapdiv {
-	
-	width: 50%;
-	margin: auto;
-	padding: 50px;
-	float: right;
-}
-
-
-.mapdiv svg {
-	
-	width: 600px;	
-}
-
-.mapdiv path {
-	
-	fill: #2FA4E7;
-	stroke: #dece0c;
-	stroke-width: 4px;
-	transition: fill 0.3s;
-	
-}
-
-/* .maplist {
-	
-	float: left;
-	width: 50%;
-	margin-top: 100px;
-	border: 1px solid #000;
-	padding: 30px;
-	
-} */
 
 .maplist a {
 	
@@ -223,7 +220,6 @@ font-size: 50px;
 	transition: color 0.3s;
 	
 }
-
 
 .maplist .grid-item {
 	
@@ -239,7 +235,6 @@ font-size: 50px;
 .maplist .grid-item span {	
 	
 	display: block;
-    background-color: #dece0c;
     width: 50%;
     margin: 0 auto;
     font-size: 17px;
@@ -247,10 +242,6 @@ font-size: 50px;
 
 @media (max-width: 768px) {
 	
-	.mapdiv {
-		
-		width: 100%;
-	}
 	.maplist {
 			
 		width: 100%;
@@ -261,56 +252,20 @@ font-size: 50px;
 
 /* End Map */
 
-/* End Body
+/* Start graph  */ 
 
-
-/* start form  */
-
-
-#form-p
-{
-	text-align: center;
-	color: #2FA4E7;
-	line-height: 50px;   /* within paragraph */
-
+.graph {
+	margin-top: 20px;
 }
-#form-group
-{
-	width: 500PX;
-	height: 800px;
-	padding-top: 20px;
-
+.chart {
+    width: 100%;
+    height: 450px;
+	margin-top: 20px;
 }
 
-.email
-{
-	font-size: 17px;
-	height: 50px;
-	width: 400px;
-	padding-left: 20px; 
-	margin-top: 0px;
-	
-						   
-}
+/* End graph */
 
-.submit 
-{
-	height: 50px;
-	width: 400px;
-	background-color: #2FA4E7;
-	font-size: 20px;
-	color: white;
-	margin-bottom: 60px;
-}
-
-.submit:hover
-{
-	background-color: #fff;
-	color: #2FA4E7;
-	
-}
-
-/* end form  */
+/* End Body */
 
 /* Start Footer */
 
@@ -455,51 +410,72 @@ font-size: 50px;
 /*End Spinner Loading */
 
 #tips .container-fluid, #tips .container-sm, #tips .container-md, #tips .container-lg, #tips .container-xl {
-  max-width: 1920px;
+	max-width: 1920px;
 }
 #tips .container-fluid .portfolio-box, #tips .container-sm .portfolio-box, #tips .container-md .portfolio-box, #tips .container-lg .portfolio-box, #tips .container-xl .portfolio-box {
-  position: relative;
-  display: block;
-  border-color: #007bff;
-border-width: 3px;
-border-style: solid;
+	position: relative;
+	display: block;
+	border-color: #f2f2f2;
+	border-width: 3px;
+	border-style: solid;
 }
 #tips .container-fluid .portfolio-box .portfolio-box-caption, #tips .container-sm .portfolio-box .portfolio-box-caption, #tips .container-md .portfolio-box .portfolio-box-caption, #tips .container-lg .portfolio-box .portfolio-box-caption, #tips .container-xl .portfolio-box .portfolio-box-caption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  opacity: 0;
-  color: #fff;
-  background:  rgba(103, 133, 136, 0.9);
-  transition: opacity 0.25s ease;
-  text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	opacity: 0;
+	color: #fff;
+	background:  rgba(103, 133, 136, 0.9);
+	transition: opacity 0.25s ease;
+	text-align: center;
 }
 #tips .container-fluid .portfolio-box .portfolio-box-caption .project-category, #tips .container-sm .portfolio-box .portfolio-box-caption .project-category, #tips .container-md .portfolio-box .portfolio-box-caption .project-category, #tips .container-lg .portfolio-box .portfolio-box-caption .project-category, #tips .container-xl .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
+	font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 0.85rem;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 #tips .container-fluid .portfolio-box .portfolio-box-caption .project-name, #tips .container-sm .portfolio-box .portfolio-box-caption .project-name, #tips .container-md .portfolio-box .portfolio-box-caption .project-name, #tips .container-lg .portfolio-box .portfolio-box-caption .project-name, #tips .container-xl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 #tips .container-fluid .portfolio-box:hover .portfolio-box-caption, #tips .container-sm .portfolio-box:hover .portfolio-box-caption, #tips .container-md .portfolio-box:hover .portfolio-box-caption, #tips .container-lg .portfolio-box:hover .portfolio-box-caption, #tips .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
 
 #tips img{
-	    width: 100%;
-    height: 250px;
+	width: 100%;
+	height: 250px;
 }
 
 #tips{
 	margin-top: 60px;
     margin-bottom: 60px;
-    padding: 37px;
+}	
+
+/* Start Scroll To Top */
+
+.scroll-to-top {
+	display: none;
+	padding: 0;
+	vertical-align: top;
+	width: 45px;
+	height: 45px;
+	position: fixed;
+	right: 15px;
+	bottom: 25px;
+	display: none;
+	z-index: 9999;
 }
+
+.scroll-to-top a {
+	color: var(--blue);
+	transition: .6s;
+}
+
+/* End Scroll To Top */
