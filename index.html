@@ -38,7 +38,7 @@
 
 			<div class="collapse navbar-collapse" id="navbarColor01">
 				<img src="./layout/images/icon.png" class="logo">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav mr-auto" id="navbar-links">
 					<li class="nav-item active">
 						<a class="nav-link" href="#Analytic">مستجدات فيروس</a>
 					</li>
@@ -491,8 +491,9 @@
 		  }
 
 		  getRegions();
-			</script>
-			<!--End Regions api-->
+			
+		</script>
+		<!--End Regions api-->
 
 	<!-- Bootstrap core JS-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -502,6 +503,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="layout/js/scripts.js"></script>
+	<script>
+		$(function() {
+			$('#navbar-links ul li').each(function() {
+				$(this).click(function(el) {
+					console.log($(el).attr('class'));
+				})
+			})
+		})
+	</script>
 
 </body>
 
