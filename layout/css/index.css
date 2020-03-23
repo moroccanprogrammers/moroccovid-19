@@ -44,13 +44,7 @@ body {
     max-width: 45%;
     height: auto;
 }
-/* .panel-heading {
-	
-	background-color: #2FA4E7 !important;
-	color: #fff !important;
-	border-color: #ddd;
-	 */
-}
+
 .nav-link {
 	font-size: 25px !important;
 }
@@ -67,11 +61,9 @@ body {
 
 .upper-bar .info{
 	margin: 10px 0;
-	
 }
 
 .home-nombre{
-	
 	border: 1px solid #000;
 }
 .home-nombres .nombres {
@@ -116,7 +108,7 @@ font-size: 50px;
 }
 .news-content{
     text-align: right;
-    margin: 1.5rem 0rem;
+    margin: 1.5rem 0;
 }
 
 .news-content ul{
@@ -124,7 +116,7 @@ font-size: 50px;
 }
 
 .news-content ul li{
-    direction: none;
+    direction: rtl;
     list-style: none;
     text-decoration: none;
 }
@@ -137,21 +129,16 @@ font-size: 50px;
 /* Start Body */
 
 .corona iframe {
-	
 	width:  560px;
 	height: 315px;
-	
 }
 
 @media (max-width: 768px) {
-	
 	.corona iframe {
-	
 		width: 400px;
 		height: 315px;
-	
 	}
-} 
+}
 
 .home-stats .stat {
 	BORDER: 1px solid #ccc;
@@ -180,12 +167,9 @@ font-size: 50px;
 /* Start Map */
 
 .map {
-	
 	margin-top: 30px;
-	
 }
 .mapdiv {
-	
 	width: 50%;
 	margin: auto;
 	padding: 50px;
@@ -194,50 +178,31 @@ font-size: 50px;
 
 
 .mapdiv svg {
-	
-	width: 600px;	
+	width: 600px;
 }
 
 .mapdiv path {
-	
 	fill: #2FA4E7;
 	stroke: #dece0c;
 	stroke-width: 4px;
 	transition: fill 0.3s;
-	
 }
-
-/* .maplist {
-	
-	float: left;
-	width: 50%;
-	margin-top: 100px;
-	border: 1px solid #000;
-	padding: 30px;
-	
-} */
 
 .maplist a {
-	
 	text-decoration: none;
 	transition: color 0.3s;
-	
 }
 
-
 .maplist .grid-item {
-	
 	background-color: #2FA4E7;
 	margin-top: 20px;
 	width: 100%;
 	height: 103px;
 	font-size: 20px;
 	padding-top: 16px;
-	
 }
 
-.maplist .grid-item span {	
-	
+.maplist .grid-item span {
 	display: block;
     background-color: #dece0c;
     width: 50%;
@@ -246,18 +211,14 @@ font-size: 50px;
 }
 
 @media (max-width: 768px) {
-	
 	.mapdiv {
-		
 		width: 100%;
 	}
 	.maplist {
-			
 		width: 100%;
-		margin: 0px;
-		
+		margin: 0;
 	}
-} 
+}
 
 /* End Map */
 
@@ -266,20 +227,17 @@ font-size: 50px;
 
 /* start form  */
 
-
 #form-p
 {
 	text-align: center;
 	color: #2FA4E7;
 	line-height: 50px;   /* within paragraph */
-
 }
 #form-group
 {
 	width: 500PX;
 	height: 800px;
 	padding-top: 20px;
-
 }
 
 .email
@@ -287,13 +245,11 @@ font-size: 50px;
 	font-size: 17px;
 	height: 50px;
 	width: 400px;
-	padding-left: 20px; 
-	margin-top: 0px;
-	
-						   
+	padding-left: 20px;
+	margin-top: 0;
 }
 
-.submit 
+.submit
 {
 	height: 50px;
 	width: 400px;
@@ -307,7 +263,6 @@ font-size: 50px;
 {
 	background-color: #fff;
 	color: #2FA4E7;
-	
 }
 
 /* end form  */
@@ -345,7 +300,7 @@ font-size: 50px;
 }
 .navbar-nav{
 	margin-left: 250px;
-	
+
 }
 
 .wtm {
@@ -386,7 +341,6 @@ font-size: 50px;
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
-	margin: 0 2px;
 	background-color: #bbb;
 	border-radius: 50%;
 	display: inline-block;
@@ -402,7 +356,6 @@ font-size: 50px;
 .spinner {
   width: 40px;
   height: 40px;
-
   position: relative;
   margin:400px auto;
 }
@@ -416,7 +369,7 @@ font-size: 50px;
   position: absolute;
   top: 0;
   left: 0;
-  
+
   -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
   animation: sk-bounce 2.0s infinite ease-in-out;
 }
@@ -432,10 +385,10 @@ font-size: 50px;
 }
 
 @keyframes sk-bounce {
-  0%, 100% { 
+  0%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 50% { 
+  } 50% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
@@ -478,7 +431,6 @@ border-style: solid;
   color: #fff;
   background:  rgba(103, 133, 136, 0.9);
   transition: opacity 0.25s ease;
-  text-align: center;
 }
 #tips .container-fluid .portfolio-box .portfolio-box-caption .project-category, #tips .container-sm .portfolio-box .portfolio-box-caption .project-category, #tips .container-md .portfolio-box .portfolio-box-caption .project-category, #tips .container-lg .portfolio-box .portfolio-box-caption .project-category, #tips .container-xl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -494,7 +446,7 @@ border-style: solid;
 }
 
 #tips img{
-	    width: 100%;
+	width: 100%;
     height: 250px;
 }
 
