@@ -45,6 +45,14 @@ body {
     height: auto;
 }
 
+/* .panel-heading {
+
+	background-color: #2FA4E7 !important;
+	color: #fff !important;
+	border-color: #ddd;
+	 */
+}
+
 .nav-link {
 	font-size: 25px !important;
 }
