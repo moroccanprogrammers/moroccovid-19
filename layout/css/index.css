@@ -80,17 +80,6 @@ body {
     height: auto;
 }
 
-<<<<<<< HEAD
-/* .panel-heading {
-
-	background-color: #2FA4E7 !important;
-	color: #fff !important;
-	border-color: #ddd;
-	 */
-}
-
-=======
->>>>>>> my
 .nav-link {
 	font-size: 25px !important;
 }
@@ -213,31 +202,8 @@ font-size: 50px;
 /* Start Map */
 
 .map {
-<<<<<<< HEAD
-	margin-top: 30px;
-}
-.mapdiv {
-	width: 50%;
-	margin: auto;
-	padding: 50px;
-	float: right;
-}
-
-
-.mapdiv svg {
-	width: 600px;
-}
-
-.mapdiv path {
-	fill: #2FA4E7;
-	stroke: #dece0c;
-	stroke-width: 4px;
-	transition: fill 0.3s;
-=======
-	
 	margin-top: 20px;
 	
->>>>>>> my
 }
 
 .maplist a {
@@ -262,13 +228,7 @@ font-size: 50px;
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
-	.mapdiv {
-		width: 100%;
-	}
-=======
 	
->>>>>>> my
 	.maplist {
 		width: 100%;
 		margin: 0;
@@ -277,50 +237,6 @@ font-size: 50px;
 
 /* End Map */
 
-<<<<<<< HEAD
-/* End Body
-
-
-/* start form  */
-
-#form-p
-{
-	text-align: center;
-	color: #2FA4E7;
-	line-height: 50px;   /* within paragraph */
-}
-#form-group
-{
-	width: 500PX;
-	height: 800px;
-	padding-top: 20px;
-}
-
-.email
-{
-	font-size: 17px;
-	height: 50px;
-	width: 400px;
-	padding-left: 20px;
-	margin-top: 0;
-}
-
-.submit
-{
-	height: 50px;
-	width: 400px;
-	background-color: #2FA4E7;
-	font-size: 20px;
-	color: white;
-	margin-bottom: 60px;
-}
-
-.submit:hover
-{
-	background-color: #fff;
-	color: #2FA4E7;
-}
-=======
 /* Start graph  */ 
 
 .graph {
@@ -333,7 +249,7 @@ font-size: 50px;
 }
 
 /* End graph */
->>>>>>> my
+
 
 /* End Body */
 
@@ -488,21 +404,6 @@ font-size: 50px;
 	border-style: solid;
 }
 #tips .container-fluid .portfolio-box .portfolio-box-caption, #tips .container-sm .portfolio-box .portfolio-box-caption, #tips .container-md .portfolio-box .portfolio-box-caption, #tips .container-lg .portfolio-box .portfolio-box-caption, #tips .container-xl .portfolio-box .portfolio-box-caption {
-<<<<<<< HEAD
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  opacity: 0;
-  color: #fff;
-  background:  rgba(103, 133, 136, 0.9);
-  transition: opacity 0.25s ease;
-=======
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -517,7 +418,6 @@ font-size: 50px;
 	background:  rgba(103, 133, 136, 0.9);
 	transition: opacity 0.25s ease;
 	text-align: center;
->>>>>>> my
 }
 #tips .container-fluid .portfolio-box .portfolio-box-caption .project-category, #tips .container-sm .portfolio-box .portfolio-box-caption .project-category, #tips .container-md .portfolio-box .portfolio-box-caption .project-category, #tips .container-lg .portfolio-box .portfolio-box-caption .project-category, #tips .container-xl .portfolio-box .portfolio-box-caption .project-category {
 	font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -534,20 +434,12 @@ font-size: 50px;
 
 #tips img{
 	width: 100%;
-<<<<<<< HEAD
-    height: 250px;
-=======
 	height: 250px;
->>>>>>> my
 }
 
 #tips{
 	margin-top: 60px;
     margin-bottom: 60px;
-<<<<<<< HEAD
-    padding: 37px;
-}
-=======
 }	
 
 /* Start Scroll To Top */
@@ -571,4 +463,3 @@ font-size: 50px;
 }
 
 /* End Scroll To Top */
->>>>>>> my
