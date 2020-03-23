@@ -427,72 +427,11 @@
 				</div>
 			</div></div>
 	</footer>
-
 	<!-- End Footer -->
 
-
-	<!-- End Script API COVID19API  -->
-	<script>
-
-		const api_url = 'https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco';
-
-		async function getData() {
-
-			const response = await fetch(api_url);
-			const data = await response.json();
-
-			//t = total
-			var tConfirmed = data.totalcases;
-			var tActive = data.activecases;
-			var tDeaths = data.totaldeaths;
-			var tRecovered = data.recovered;
-
-			document.getElementById("tC").textContent = tConfirmed;
-			document.getElementById("tA").textContent = tActive;
-			document.getElementById("tD").textContent = tDeaths;
-			document.getElementById("tR").textContent = tRecovered;
-		}
-
-				getData();
-
-			</script>
-
-			<!-- End Script API COVID19API  -->
-
-			<!--Get regions counts from api-->
-			<script>
-				const regi_url =
-			"https://moroccostats.herokuapp.com/stats/coronavirus/countries/morocco/regions";
-
-		  async function getRegions() {
-			const response = await fetch(regi_url);
-			const data = await response.json();
-
-
-			var Fsmeknes = data.Fsmeknes;
-			var MarrakechSafi = data.MarrakechSafi;
-			var RabatSalKenitra = data.RabatSalKenitra;
-			var TangerTetouanAlHoceima = data.TangerTetouanAlHoceima;
-			var CasaSettat = data.CasaSettat;
-			var GuelmimOuedNoun = data.GuelmimOuedNoun;
-			var Oriental = data.Oriental;
-			var SoussMassa = data.SoussMassa;
-			var BeniMellalKhnifra = data.BeniMellalKhnifra;
-
-			document.getElementById("Fsmeknes").textContent = Fsmeknes;
-			document.getElementById("MarrakechSafi").textContent = MarrakechSafi;
-			document.getElementById("RabatSalKenitra").textContent = RabatSalKenitra;
-			document.getElementById("TangerTetouanAlHoceima").textContent = TangerTetouanAlHoceima;
-			document.getElementById("CasaSettat").textContent = CasaSettat;
-			document.getElementById("GuelmimOuedNoun").textContent = GuelmimOuedNoun;
-			document.getElementById("Oriental").textContent = Oriental;
-			document.getElementById("SoussMassa").textContent = SoussMassa;
-			document.getElementById("BeniMellalKhnifra").textContent = BeniMellalKhnifra;
-		  }
-
-		  getRegions();
-			</script>
-			<!--End Regions api-->
+	<!-- API JS -->
+	<script src="layout/js/api.js"></script>
+	<!-- END API JS -->
 
 	<!-- Bootstrap core JS-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
