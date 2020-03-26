@@ -3,24 +3,11 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link href="layout/images/icon.png" rel="icon" type="image/png">
+	<link href="dist/images/icon.png" rel="icon" type="image/png">
 	<title> مستجدات فيروس كورونا بالمغرب</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="مستجدات فيروس كورونا في المغرب لسنة 2020">
-
-		<link href="layout/css/index.css" rel="stylesheet" type="text/css" />
-
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-
-		<!-- Google fonts CSS -->
-		<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet" />
-
-		<!-- fonts Awesome CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-
-        <!-- Third party plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+	<link href="dist/css/index.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -30,7 +17,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top text-center text-uppercase" id="navbar-scroll">
 		<div class="container">
 			<a class="navbar-brand" href="#intro">
-				<img src="./layout/images/icon.png" width="30" height="30" alt="">
+				<img src="./dist/images/icon.png" width="30" height="30" alt="">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar" aria-controls="my-navbar" aria-expanded="false" aria-label="Toggle navigation">
 				<a><i class="fas fa-align-left"></i></a>
@@ -53,7 +40,7 @@
 	<!-- Start Welcome Banner-->
 	<div class="banner container"  style="margin-top: 100px !important;">
 		<div class="col-xl-2 col-lg-3 col-md-12">
-			<img src="layout/images/new_message.svg" alt="new message" class="image">
+			<img src="dist/images/new_message.svg" alt="new message" class="image">
 		</div>
 		<div class="page-content col-xl-7 col-lg-6 col-md-12">
 			<h3 class="mb-1">مرحبا بكم!</h3>
@@ -424,13 +411,16 @@
 	<!-- Start Footer-->
 	<footer class="footer">
 		<div class="home-contact container">
+			<div class="text-center">
+				هذا الموقع غير رسمي ولا يتبع لوزارة الصحة المغربية، بل هو مبادرة مواطِنة تعتمد المعطيات الرسمية لمحاربة الشائعات
+			</div>
 			<div class="row">
 				<div class="col-sm-6 text-center text-sm-right">
 					Copyright &copy; <span class="year">2020</span> Moroccovid-19
 				</div>
 				<div class="col-sm-6 text-sm-left">
 					<ul class="nav list-unstyled">
-						<li ><a href="#"><i class="fab fa-facebook-f"  style="color: #4267B2;"></i></a></li>
+						<li ><a href="https://www.facebook.com/Moroccan-Programmers-%D8%A7%D9%84%D9%85%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D8%BA%D8%A7%D8%B1%D8%A8%D8%A9-592004937962350" target="_blanc"><i class="fab fa-facebook"  style="color: #4267B2;"></i></a></li>
 						<li ><a href="#"><i class="fab fa-twitter"  style="color: #1DCAFF;"></i></a></li>
 						<li ><a href="#"><i class="fab fa-google-plus-g"  style="color: #EA4335;"></i></a></li>
 						<li ><a href="#"><i class="fab fa-youtube"  style="color: #FB0000;"></i></a></li>
@@ -447,23 +437,11 @@
 		</a>
 	</div>
 	<!-- End Scroll To Top -->
-	
-	<!-- API JS -->
-	<script src="layout/js/api.js"></script>
-	<!-- END API JS -->
 
-	<!-- Bootstrap core JS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-	<!-- Third party plugin JS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-	<!-- Core theme JS-->
-	<script src="layout/js/scripts.js"></script>
-	    <!-- Chart -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <!-- historical -->
-    <script src="layout/js/historical.js"></script>
+	<!-- google charts -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<!-- bunlde (main) file -->
+	<script src="dist/js/index.js"></script>
 
 </body>
 
