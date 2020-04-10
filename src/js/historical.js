@@ -1,13 +1,14 @@
-const api_url_hestori = 'https://corona.lmao.ninja/historical';
+const api_url_hestori = 'https://corona.lmao.ninja/v2/historical/morocco?lastdays=all';
 	
 async function getHestorical() {
     var valChart = new Array(),
         i=0;
-    const   response = await fetch(api_url_hestori),
+        
+    const response = await fetch(api_url_hestori),
             data = await response.json(),
-            cases = data[63].timeline['cases'],
-            deaths = data[63].timeline['deaths'],
-            recovered = data[63].timeline['recovered'],
+            cases = data.timeline['cases'],
+            deaths = data.timeline['deaths'],
+            recovered = data.timeline['recovered'],
             count = Object.keys(cases).length;
 
     $.each( cases, function( key, value ) {
@@ -17,10 +18,7 @@ async function getHestorical() {
             $('.statistique').append(col);
             i++;
         }
-
     });
-    //console.log(valChart);
-    //chart script
 
     google.charts.load('current', {'packages':['line']});
     google.charts.setOnLoadCallback(drawChart);
@@ -32,11 +30,8 @@ async function getHestorical() {
     chartdata.addColumn('number', 'الحالات');
     chartdata.addColumn('number', 'الوفيات');
     chartdata.addColumn('number', 'المتعافون');
-
-      console.log(valChart);
-      chartdata.addRows(valChart);
-  
-    
+      
+    chartdata.addRows(valChart);
 
     var options = {
       width: '100%',
@@ -45,9 +40,23 @@ async function getHestorical() {
 
     var chart = new google.charts.Line(document.getElementById('linechart_material'));
 
-    chart.draw(chartdata, google.charts.Line.convertOptions(options));
+    const draw = () => {
+      chart.draw(chartdata, google.charts.Line.convertOptions(options));
+    }
+
+    draw()
+    
+    if (window.addEventListener) {
+      window.addEventListener('resize', draw);
+    }
+    else if (window.attachEvent) { // for old browser version
+      window.attachEvent('onresize', draw);
+    }
+    else {
+      window.resize = draw;
+    }  
   }
 
-
 }
+
 getHestorical();
