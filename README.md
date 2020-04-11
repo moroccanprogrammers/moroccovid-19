@@ -3,7 +3,7 @@
 <img src="corona/assets/style/Logo-01.png" width="250px" align="middle" />
 </p></br></br></br></br>
 
-
+<a href="https://snyk.io/test/github/moroccanprogrammers/moroccovid-19?targetFile=package.json"><img src="https://snyk.io/test/github/moroccanprogrammers/moroccovid-19/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/moroccanprogrammers/moroccovid-19?targetFile=package.json" style="max-width:100%;"></a>
 ## 01 - About Project
 
 This is a redesign of the past web project, Moroccovid-19, With a large number of rounded corners and white space, users can freely control the relevant columns of the home page for easy operation, users can also get the latest news from trusted sources.
